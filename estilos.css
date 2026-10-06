@@ -32,6 +32,10 @@ padding: 20px;
 border: 1px solid #d0d7de;
 }
 
+body {
+    background-color: red !important;
+}
+
 /* 2. TABLET: Pantallas de 768px o más */
 @media (min-width: 768px) {
 .contenedor-tarjetas {
