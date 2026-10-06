@@ -27,19 +27,19 @@ body {
 }
 
 .bloque2 {
-    background-color: #bbf7d0; /* Verde menta suave */
+    background-color: #60da7a; /* Verde menta suave */
     border-color: #86efac;
     color: #14532d;
 }
 
 .bloque3 {
-    background-color: #bae6fd; /* Azul cielo */
+    background-color: #7bbee2; /* Azul cielo */
     border-color: #7dd3fc;
     color: #0c4a6e;
 }
 
 .bloque4 {
-    background-color: #ddd6fe; /* Lavanda / Violeta suave */
+    background-color: #6657ac; /* Lavanda / Violeta suave */
     border-color: #c4b5fd;
     color: #6531b3;
 }
