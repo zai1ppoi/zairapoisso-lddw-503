@@ -7,7 +7,7 @@ body {
 
 .contenedor-bloques {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 16px;
     padding: 16px;
 }
@@ -41,7 +41,7 @@ body {
 .bloque4 {
     background-color: #ddd6fe; /* Lavanda / Violeta suave */
     border-color: #c4b5fd;
-    color: #4c1d95;
+    color: #6531b3;
 }
 
 /* Responsive Grid / Flexbox */
