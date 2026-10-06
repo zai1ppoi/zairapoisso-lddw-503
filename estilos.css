@@ -1,56 +1,67 @@
-.contenedor-bloques {
-display: flex;
-flex-direction: column; /* Apilados verticalmente */
-gap: 16px;
-padding: 16px;
+/* Estilos Base */
+body {
+    background-color: #f8fafc;
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
 }
+
+.contenedor-bloques {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+/* Clases comunes para compartir estilos y evitar duplicación */
+.bloque1, .bloque2, .bloque3, .bloque4 {
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid transparent;
+}
+
+/* Paleta armoniosa de tonos suaves */
 .bloque1 {
-background-color: #f1ea84;
-border-radius: 8px;
-padding: 20px;
-border: 1px solid #000000;
+    background-color: #fef08a; /* Amarillo manteca */
+    border-color: #fde047;
+    color: #713f12;
 }
 
 .bloque2 {
-background-color: #90c752;
-border-radius: 8px;
-padding: 20px;
-border: 1px solid #d0d7de;
+    background-color: #bbf7d0; /* Verde menta suave */
+    border-color: #86efac;
+    color: #14532d;
 }
 
 .bloque3 {
-background-color: #48879b;
-border-radius: 8px;
-padding: 20px;
-border: 1px solid #d0d7de;
+    background-color: #bae6fd; /* Azul cielo */
+    border-color: #7dd3fc;
+    color: #0c4a6e;
 }
 
 .bloque4 {
-background-color: #514baa;
-border-radius: 8px;
-padding: 20px;
-border: 1px solid #d0d7de;
+    background-color: #ddd6fe; /* Lavanda / Violeta suave */
+    border-color: #c4b5fd;
+    color: #4c1d95;
 }
 
-body {
-    background-color: red !important;
-}
+/* Responsive Grid / Flexbox */
 
-/* 2. TABLET: Pantallas de 768px o más */
+/* Tablet: 2 columnas */
 @media (min-width: 768px) {
-.contenedor-tarjetas {
-flex-direction: row; /* Pasan a fila */
-flex-wrap: wrap; /* Permite saltos de línea */
+    .contenedor-bloques {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .bloque1, .bloque2, .bloque3, .bloque4 {
+        flex: 1 1 calc(50% - 16px);
+        box-sizing: border-box;
+    }
 }
-.tarjeta {
-/* 2 columnas: cada tarjeta ocupa la mitad menos el espacio del gap */
-flex: 1 1 calc(50% - 16px);
-}
-}
-/* 3. DESKTOP: Pantallas de 1024px o más */
+
+/* Desktop: 4 columnas (o ajusta a 33.333% si prefieres 3 por fila) */
 @media (min-width: 1024px) {
-.tarjeta {
-/* 3 columnas: las tres se distribuyen equitativamente en una fila */
-flex: 1 1 calc(33.333% - 16px);
-}
+    .bloque1, .bloque2, .bloque3, .bloque4 {
+        flex: 1 1 calc(25% - 16px);
+    }
 }
